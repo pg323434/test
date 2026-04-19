@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canara Bank Debit Cards</title>
+<style>
+    body{
+            /* font-family: 'Playfair Display', serif; */
+            font-family: 'Segoe UI', sans-serif;
+            /* background: #fdf8f0; */
+            /* background-image: linear-gradient(to right, rgba(250, 252, 249, 0.582),rgba(231, 238, 241, 0.39)); */
+            min-height: 100vh;
+            color: #044d69;
+            /* display: flex;
+            flex-direction: column; */
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            
+        }
+    .header{         
+         
+            color: #0aaff0;
+            /* font-size: xx-large; */
+            border-radius: 12px;
+            justify-self: center;
+            margin-bottom: 30px;
+            box-shadow: 4px 4px 12px rgba(1, 107, 121, 0.2);
+            text-align: center;
+            align-content: center;
+            max-width: 40%;
+            font-size: large;
+            align-items: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .feature{
+        display: grid;
+        /* grid-template-columns: repeat(4,1fr); */
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        gap:40px;
+        align-items: center;
+        font-size: medium;
+        /* justify-content: center; */
+        width:90%;
+        border-radius: 20px;
+        box-shadow: 4px 4px 5px rgba(1, 107, 121, 0.2);
+        padding: 25px;
+        overflow-wrap: break-word;
+        justify-items: center;
+        justify-self: center;
+    }
+    @media(max-width:768px){
+        .feature{
+            grid-template-columns: 1fr;
+        }
+    }
+    .featureitem{
+        display: flex;
+        flex-direction: column;
+        box-shadow: 4px 4px 2px rgba(1, 107, 121, 0.2);
+        /* align-items: start; */
+        height: 100%;
+        width:100%;
+        background-color: rgba(159, 180, 180, 0.034);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        padding: 5px;
+    }
+    .featureitem_title{
+        display: flex;
+        height: 70px;
+        width: 100%;
+        background-color: #0aaff0;
+        text-align: center;
+        font-size:20px;
+        align-items: center;
+        justify-content: center;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        color: #f2f4f5;
+    }
+
+    .featureitem_body{
+        font-size: larger;
+    }
+    .label{
+        border-radius: 20px;box-shadow: 4px 4px 5px rgba(1, 107, 121, 0.2);padding: 10px;
+        font-size: 30px;text-align: center;width: fit-content;align-self: center;justify-self: center;
+        color: #0aaff0;
+    }
+    .imglabel{
+        /* border-radius: 20px;box-shadow: 4px 4px 5px rgba(1, 107, 121, 0.2);padding: 10px; */
+        font-size: 15px;text-align: center;width: fit-content;align-self: center;justify-self: center;
+        color: #0aaff0;
+    }
+.setup{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-self: center;
+    /*justify-content: center; */
+    width: 50%;
+    height: fit-content;
+    gap: 20px;
+    align-items: stretch;
+    padding: 10px;
+    /* justify-content: center; */
+    align-items: center;
+}
+.description{
+        margin-top: 15px;
+        font-size: 20px;
+        color: #444;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+                                        /* CARD IMAGE STYLING */
+.grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+      gap: 15px;
+      padding:10px;
+      align-items: center;
+      justify-content: center;
+      width: 90%;
+      justify-self: center;
+    }
+
+    .card {
+      overflow: visible;
+      border-radius: 22px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      min-height: fit-content;
+        
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+
+
+    @media (max-width: 600px) {
+      .card {
+        height: 140px;
+      }
+    }
+/* CARD IMAGE STYLING END */
+    
+.container {
+        max-width: 70%;
+        margin: auto;
+        padding: 40px 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .features {
+        width: 100%;
+        box-shadow:10px 10px 12px rgba(1, 107, 121, 0.2);
+        padding: 15px;border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+</style>
+</head>
+<body>
+    
+    <div class="header">
+        <div><img style="height: 150px; " src="\assets\cardsL.jpg"></div>
+        <div><h1>Canara Bank ATM/Debit Cards</h1></div>
+        <div>
+        <p class="description">Canara Bank offers a comprehensive suite of debit cards designed to empower your lifestyle with seamless security, global acceptance, and exclusive rewards. Whether you are a student, a business professional, or a global traveler, our portfolio has a card tailored for your specific needs.
+        </p>
+    </div>
+    </div>
+    <div><p class="label">Card Variants & Feature Portfolio</p></div>
+    <br>
+
+<div class="feature">
+    <div class="featureitem">
+        <div class="featureitem_title">Classic / Standard</div>
+        <div class="featureitem_body">
+            <ul>
+                <li><strong>Cash Withdrawal:</strong> ₹75,000</li>
+                <li><strong>Daily POS/E-commerce Limit:</strong> ₹2,00,000</li>
+                <li><strong>Key Features:</strong>
+                    <ul>
+                    <li>Available on RuPay, Visa, and Mastercard networks.</li>
+                    <li>Personalized and Non-Personalized (Insta) options.</li>
+                    <li>Includes specialized variants like the <strong>Campus Debit Card</strong> for students.</li>
+                </ul>
+                </li>
+
+            </ul>
+            
+        </div>
+
+    </div>
+    <div class="featureitem">
+        <div class="featureitem_title">Platinum Privilege</div>
+        <div class="featureitem_body">
+            <ul>
+                <li><strong>Cash Withdrawal:</strong> ₹1,00,000</li>
+                <li><strong>Daily POS/E-commerce Limit:</strong> ₹5,00,000</li>
+                <li><strong>Key Features:</strong>
+                    <ul>
+                    <li>Complimentary Domestic Lounge Access (subject to quarterly spends).</li>
+                    <li>Includes Mastercard Women and Millennial variants with curated lifestyle offers.</li>
+                    <li>Enhanced rewards: 1 Point for every ₹200 spent.</li>
+                </ul>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+    <div class="featureitem">
+        <div class="featureitem_title">Select / World / Signature (Premium)</div>
+        <div class="featureitem_body">
+            <ul>
+            <li><strong>Cash Withdrawal:</strong> ₹1,00,000</li>
+            <li><strong>Daily POS/E-commerce Limit:</strong> ₹5,00,000</li>
+            <li><strong>Key Features:</strong>
+                <ul>
+                <li><strong>RuPay Select:</strong> Exclusive access to Gyms, Spas, and Health check-ups.</li>
+                <li><strong>Visa Signature/Mastercard World:</strong> 24/7 Dedicated Concierge Services and Airport Lounge Access.</li>
+                <li><strong>Global Perks:</strong> Zero cross-currency markups and India Golf Program access.</li>
+            </ul>
+            </li>
+
+        </ul>
+    </div>
+
+    </div>
+    <div class="featureitem">
+        <div class="featureitem_title">Business Global</div>
+        <div class="featureitem_body">
+            <ul>
+                <li><strong>Cash Withdrawal:</strong> ₹1,00,000</li>
+                <li><strong>Daily POS/E-commerce Limit:</strong> ₹5,00,000</li>
+                <li><strong>Key Features:</strong>
+                    <ul>
+                    <li>Designed specifically for entrepreneurs and business owners.</li>
+                    <li>Simplified expense tracking to streamline tax filing.</li>
+                    <li>Includes Baggage Insurance and Purchase Protection.</li>
+                </ul>
+                </li>
+    
+            </ul>
+        </div>
+
+    </div>
+    <div class="featureitem">
+        <div class="featureitem_title">Digital & Virtual First: Canara Virtual Debit Card</div>
+        <div class="featureitem_body">
+            <ul>
+                <li><strong>Generate your card instantly via the Canara ai1 App.</strong></li>
+                <li><strong>Key Features:</strong>
+                    <ul>
+                    <li><strong>Safe E-commerce:</strong>Ideal for one-time online transactions or recurring subscriptions.</li>
+                    <li><strong>Instant Access:</strong> Use it immediately for online shopping even before your physical card arrives.</li>
+                    </ul>
+                </li>
+            </ul>
+    </div>
+    </div>
+</div>
+<p class="label">Click/Tap on each Card to view detailed information</p>
+                            <!-- CARD IMAGES -->
+<div class="grid">
+
+    <!-- Repeat this block for 10 cards -->
+
+    <div class="card" >      
+      <div><a href="https://www.canarabank.bank.in/rupay-select-debit-card" target="_blank"><img src="https://www.canarabank.bank.in/documents/d/guest/rupay-select-debit-card-27mar24" alt="Rupay Select Debit Card"></a></div>
+      <div><p class="imglabel">Rupay Select Debit Card</p></div>
+    </div>
+
+    <div class="card" >      
+            <a href="https://www.canarabank.bank.in/mastercard-world-debit-card" target="_blank">
+            <img src="https://www.canarabank.bank.in/documents/d/guest/world-27mar24" 
+            alt="Mastercard World Debit Card">
+            </a>
+            <div><p class="imglabel">Mastercard World Debit Card</p></div>
+    </div>
+
+    <div class="card" >      
+        <a href="https://www.canarabank.bank.in/visa-platinum-debit-card" target="_blank">
+        <img src="https://www.canarabank.bank.in/documents/d/guest/visa-platinum-27mar24" 
+        alt="VISA Platinum Debit Card">
+        </a>
+        <div><p class="imglabel">VISA Platinum Debit Card</p></div>
+    </div>
+
+    <div class="card" >      
+        <a href="https://www.canarabank.bank.in/rupay-platinum-international-debit-card" target="_blank">
+        <img src="https://www.canarabank.bank.in/documents/d/guest/rupay-platinum-international-debit-27mar24" 
+        alt="Rupay Platinum International Debit Card">
+        </a>
+        <div><p class="imglabel">Rupay Platinum International Debit Card</p></div>
+    </div>
+
+    <div class="card" >      
+        <a href="https://www.canarabank.bank.in/mastercard-world-nri-platina-debit-card" target="_blank">
+        <img src="https://www.canarabank.bank.in/documents/d/guest/world-nri-platina-27mar24" 
+        alt="Mastercard World NRI Platina Debit Card">
+        </a>
+        <div><p class="imglabel">Mastercard World NRI Platina Debit Card</p></div>
+    </div>
+
+    <div class="card" >      
+        <a href="https://www.canarabank.bank.in/visa-classic-debit-card" target="_blank">
+        <img src="https://www.canarabank.bank.in/documents/d/guest/visa-classic-27mar24" 
+        alt="VISA Classic Debit Card">
+        </a>
+        <div><p class="imglabel">VISA Classic Debit Card</p></div>
+
+    </div>
+
+    <div class="card" >      
+        <a href="https://www.canarabank.bank.in/rupay-platinum-domestic-debit-card" target="_blank">
+        <img src="https://www.canarabank.bank.in/documents/d/guest/rupay-platinum-domestic-debit-27mar24" 
+        alt="Rupay Platinum Domestic Debit Card">
+        </a>
+        <div><p class="imglabel">Rupay Platinum Domestic Debit Card</p></div>
+    </div>
+
+    <div class="card" >      
+        <a href="https://www.canarabank.bank.in/mastercard-platinum-women-debit-card" target="_blank">
+        <img src="https://www.canarabank.bank.in/documents/d/guest/platinum-women-27mar24" 
+        alt="Mastercard Platinum Women Debit Card">
+        </a>
+        <div><p class="imglabel">Mastercard Platinum Women Debit Card</p></div>
+    </div>
+
+    <div class="card" >      
+        <a href="https://www.canarabank.bank.in/mastercard-platinum-millennial-debit-card" target="_blank">
+        <img src="https://www.canarabank.bank.in/documents/d/guest/platinum-millenial-27mar24" 
+        alt="Mastercard Platinum Millennial Debit Card">
+        </a>
+        <div><p class="imglabel">Mastercard Platinum Millennial Debit Card</p></div>
+    </div>
+
+    <div class="card" >      
+        <a href="https://www.canarabank.bank.in/rupay-classic-debit-card" target="_blank">
+        <img src="https://www.canarabank.bank.in/documents/d/guest/rupay-classic-27mar24" 
+        alt="Rupay Classic Debit Card">
+        </a>
+        <div><p class="imglabel">Rupay Classic Debit Card</p></div>
+    </div>
+
+    <div class="card" >      
+        <a href="https://www.canarabank.bank.in/mastercard-platinum-debit-card" target="_blank">
+        <img src="https://www.canarabank.bank.in/documents/d/guest/master_platinum_debit-27mar24" 
+        alt="Mastercard Platinum Debit Card">
+        </a>
+        <div><p class="imglabel">Mastercard Platinum Debit Card</p></div>
+    </div>
+
+    <div class="card" >      
+        <a href="https://www.canarabank.bank.in/mastercard-business-debit-card" target="_blank">
+        <img src="https://www.canarabank.bank.in/documents/d/guest/master_standard_debit-27mar24" 
+        alt="MasterCard Business Debit Card">
+        </a>
+        <div><p class="imglabel">MasterCard Business Debit Card</p></div>
+    </div>
+
+    <div class="card" >      
+        <a href="https://www.canarabank.bank.in/mastercard-standard-debit-card" target="_blank">
+        <img src="https://www.canarabank.bank.in/documents/d/guest/master_standard_debit-27mar24" 
+        alt="MasterCard Standard Debit Card">
+        </a>
+        <div><p class="imglabel">MasterCard Standard Debit Card</p></div>
+    </div>
+
+    <div class="card" >      
+        <a href="https://www.canarabank.bank.in/rupay-millennial-debit-card" target="_blank">
+        <img src="https://www.canarabank.bank.in/documents/d/guest/debit" 
+        alt="Rupay Millennial Debit Card">
+        </a>
+        <div><p class="imglabel">Rupay Millennial Debit Card</p></div>
+    </div>
+
+    <div class="card" >      
+        <a href="https://www.canarabank.bank.in/rupay-women-platinum-debit-card" target="_blank">
+        <img src="https://www.canarabank.bank.in/documents/d/guest/image-1-1" 
+        alt="RuPay Women Platinum Debit Card">
+        </a>
+        <div><p class="imglabel">RuPay Women Platinum Debit Card</p></div>
+    </div>
+    
+    <!-- Add more cards similarly -->
+
+</div>
+                            <!-- CARD IMAGES END -->
+<p class="label">Quick Setup & Security Guide</p>
+<br>
+    <div class="feature">
+        <div class="featureitem">
+            <div class="featureitem_title">How to Generate a Green PIN</div>
+            <div class="featureitem_body">
+                <ol>
+                    <li>Open the Canara ai1 Mobile App.</li>
+                    <li>Navigate to 'Cards' > 'Green PIN'.</li>
+                    <li>Enter the card expiry date and set your new 4-digit PIN.</li>
+                    <li>Confirm the request using the OTP sent to your registered mobile number.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="featureitem">
+            <div class="featureitem_title">How to Enable Online Transactions</div>
+            <div class="featureitem_body">
+                <ol>
+                    <li>In the Canara ai1 App, go to 'Manage Cards'.</li>
+                    <li>Select 'Domestic' or 'International' usage.</li>
+                    <li>Toggle 'Online / E-Commerce' to ON.</li>
+                    <li>Set your desired daily limit and confirm with your MPIN.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="container">   
+        <div><p class="label">DEBIT CARD CUSTOMER DELIGHT</p></div><br>
+        <div class="features">
+            <img style="width: 100%;" src="\assets\cardcuststory.png">
+        </div>
+    </div>  
+<div class="container">   
+    <div class="features">
+        <img style="width: 100%;" src="\assets\atmnetwork.png">
+    </div>  
+    <div><p class="label">ATM CUSTOMER DELIGHT</p></div><br>
+    <div class="features">
+    <img style="width: 100%;" src="\assets\atmcuststory.png">
+    </div>   
+    
+</div>
+</body>
+
+
+
+</html>
